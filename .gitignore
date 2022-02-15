@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Source file
+LoanStats_2019Q1.csv
+
 # C extensions
 *.so
 

@@ -9,10 +9,13 @@ You will **oversample** the data using the `RandomOverSampler` and `SMOTE` algor
 Credit card credit dataset from [LendingClub](https://www.lendingclub.com/), a peer-to-peer lending services company
 
 ## Deliverables:
-Deliverable 1: Use Resampling Models to Predict Credit Risk
-Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk
-Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
-Deliverable 4: A Written Report on the Credit Risk Analysis
+[Deliverable 1](./credit_risk_resampling.ipynb): Use Resampling Models to Predict Credit Risk
+
+[Deliverable 2](./credit_risk_resampling.ipynb): Use the SMOTEENN Algorithm to Predict Credit Risk
+
+[Deliverable 3](./credit_risk_resampling.ipynb): Use Ensemble Classifiers to Predict Credit Risk
+
+Deliverable 4: A Written Report on the Credit Risk Analysis (this file)
 
 ## Results:
 * Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models.

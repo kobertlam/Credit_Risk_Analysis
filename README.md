@@ -38,7 +38,7 @@ We analyse the balanced accuracy score, the precision and recall scores on the *
 * SMOTEENN:
     * balance accuracy score:
     * precision and recall scores:
-!image 4](./Resources/4_SMOTEENN.jpg)
+![image 4](./Resources/4_SMOTEENN.jpg)
 
 * Balanced Random Forest Classifier:
     * balance accuracy score:

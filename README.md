@@ -18,7 +18,7 @@ Credit card credit dataset from [LendingClub](https://www.lendingclub.com/), a p
 Deliverable 4: A Written Report on the Credit Risk Analysis (this file)
 
 ## Results:
-We analyse the balanced accuracy score, the precision and recall scores on the **high_risk** class from each model, as our target is to find a model that can predict the high credit risk.
+We analyse the balanced accuracy score, the precision and recall scores on the **high_risk** class from each model, as our target is to find a model that can better predict the high credit risk.
 
 1) Oversampling using RandomOverSampler:
     * balanced accuracy score: 65.73%
@@ -52,8 +52,14 @@ We analyse the balanced accuracy score, the precision and recall scores on the *
 
 
 ## Summary:
-* Based on the above results, the balanced accuracy score for the models using oversampling/undersampling/over-and-undersampling are between 54.43% and 68.76%:
-    * sgd
-* The Summarize the results of the machine learning models,
-* include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+* The balanced accuracy score for the models using oversampling/undersampling/over-and-undersampling are between 54.43% and 68.76%:
+    * The SMOTEENN algorithm has the highest balanced accuracy score (68.76%) among this 4 models.
+    * The Cluster Centroids algorithm has the lowest balanced accuracy score (54.43%) among this 4 models.
+    * All 4 models have very low precision for **high_risk** class (0.01), and the recall for **high_risk** class is between 0.57 and 0.71.
+* The **Balance Random Forest Classifier** and **Easy Ensemble Classifier** have very high balanced accuracy score and recall for **high_risk** class:
+    * Balanced accuracy score: (1) Balance Random Forest --> 95.54%,  (2) Easy Ensemble --> 93.17%
+    * Recall for **high_risk** class: (1) Balance Random Forest --> 1.00, (2) Easy Ensemble --> 0.92
+* The precision for **high_risk** class are still low: **Balance Random Forest** (0.06) and **Easy Ensemble** (0.09)
+* In overall, **Balanced Random Forest Classifier** has the highest balanced accuracy score of 95.54%, and also has the highest recall for **high_risk** of 1.00.  On the other hand, **Easy Ensemble Classifier** has the highest precision for **high_risk** of 0.09, and the highest F1 score (0.16) on high_risk class
+* Since the sensitivity on predicting high risk class is the most important factor when considering a model for credit risk prediction, the **Balanced Random Forest Classifier** has the amazing 1.00 on the recall for **high_risk** class (i.e. it can predict ALL cases as "high_risk" which are actually in "high_risk" class!), and this model also has very high balanced accuracy score (95.54%), I will recommend the **Balanced Random Forest Classifier** as the model to predict credit risk based on the existing dataset.
 
